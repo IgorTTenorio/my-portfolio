@@ -565,6 +565,38 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
+/* ----- Awards ----- */
+/* --------------------------------------- */
+
+.awards__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .awards__content {
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
+}
+
+.awards__photo-container {
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .awards__text {
+        flex: 0 0 35%;
+    }
+    
+    .awards__photo-container {
+        flex: 1;
+        margin: 0 var(--gutter-huge) 0 0;
+    }
+}
+
+/* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
